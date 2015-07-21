@@ -1,0 +1,8 @@
+<template name="postsList">
+	<div class="posts">
+		<!-- The {{#each}} block helper not only iterates over our array, it also sets the value of this inside the block to the iterated object-->
+		{{#each posts}}
+    	{{> postItem}}
+		{{/each}}
+  </div>
+</template>
