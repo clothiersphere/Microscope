@@ -16,7 +16,12 @@
 			<ul class="nav navbar-nav navbar-right">
         <!-- currentUser helper provided by accounts -->
         {{#if currentUser}}
-        	<li><a href="{{pathFor 'postSubmit'}}">Submit Post</a></li>
+        	<li>
+            <a href="{{pathFor 'postSubmit'}}">Submit Post</a>
+          </li>
+          <li class="dropdown">
+            {{> notifications}}
+          </li>
         {{/if}}
       </ul> 
 			</div>
