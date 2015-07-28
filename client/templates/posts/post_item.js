@@ -7,8 +7,5 @@ Template.postItem.helpers({
 		var a = document.createElement('a'); a.href = this.url;
 		//use a hostname property to get back the link’s domain name without the rest of the URL.
 		return a.hostname;
-	}, 
-	commentsCount: function() {
-		return Comments.find({postId: this._id}).count(); 
 	}
 });
